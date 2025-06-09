@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PickAI - Smarter Logistics</title>
+  <link rel="stylesheet" href="pickai.css"/>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <script src="pickai.js" defer></script>
+
+</head>
+<body class="font-inter text-gray-800 leading-relaxed">
+  <header class="navbar bg-white shadow-lg border-b border-gray-100 sticky top-0 z-50 backdrop-blur-sm bg-white/95">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <div class="logo flex items-center space-x-3">
+        <img src="assets/logo.png" alt="PickAI Logo" class="w-10 h-10 rounded-lg shadow-md" />
+        <span class="text-2xl font-bold font-poppins gradient-text">PickAI</span>
+      </div>
+      <nav>
+        <ul class="flex items-center space-x-8">
+          <li><a href="#how-it-works" class="text-gray-700 hover:text-indigo-600 font-medium text-lg transition-colors duration-300 hover:scale-105 transform">How It Works</a></li>
+          <li><a href="#features" class="text-gray-700 hover:text-indigo-600 font-medium text-lg transition-colors duration-300 hover:scale-105 transform">Features</a></li>
+          <li><a href="#contact" class="text-gray-700 hover:text-indigo-600 font-medium text-lg transition-colors duration-300 hover:scale-105 transform">Contact</a></li>
+          <li><button id="darkModeToggle" class="text-2xl hover:scale-110 transform transition-transform duration-300 p-2 rounded-full hover:bg-gray-100">🌙</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero bg-gradient-to-br from-indigo-50 via-white to-purple-50 py-20 md:py-32 relative overflow-hidden">
+    <div class="absolute inset-0 bg-grid-pattern opacity-5"></div>
+    <div class="hero-content container mx-auto px-6 text-center relative z-10">
+      <h1 class="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight tracking-tight">
+        Smarter Logistics with <span class="hero-gradient">AI</span>
+      </h1>
+      <p class="text-xl md:text-2xl lg:text-3xl text-gray-600 mb-12 max-w-4xl mx-auto font-medium leading-relaxed">
+        Optimize your deliveries with <span class="font-semibold text-indigo-600">intelligent route planning</span> and <span class="font-semibold text-purple-600">real-time analytics</span>.
+      </p>
+      <a href="#contact" class="cta-button inline-block px-10 py-5 bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-xl font-bold rounded-2xl hover:from-indigo-700 hover:to-purple-700 transition-all duration-300 shadow-2xl hover:shadow-3xl transform hover:-translate-y-2 hover:scale-105">
+        Get Started Today
+      </a>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section py-20 md:py-28 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl md:text-6xl lg:text-7xl font-black text-center mb-16 gradient-text">How It Works</h2>
+      <div class="steps grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <div class="text-center group hover:scale-105 transform transition-all duration-300">
+          <div class="text-6xl md:text-7xl mb-6 group-hover:scale-110 transform transition-transform duration-300">📦</div>
+          <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Upload Packages</h3>
+          <p class="text-lg text-gray-600 leading-relaxed">Seamlessly upload your package data and delivery requirements</p>
+        </div>
+        <div class="text-center group hover:scale-105 transform transition-all duration-300">
+          <div class="text-6xl md:text-7xl mb-6 group-hover:scale-110 transform transition-transform duration-300">🧠</div>
+          <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">AI Optimizes Routes</h3>
+          <p class="text-lg text-gray-600 leading-relaxed">Our advanced AI algorithms create the most efficient delivery routes</p>
+        </div>
+        <div class="text-center group hover:scale-105 transform transition-all duration-300">
+          <div class="text-6xl md:text-7xl mb-6 group-hover:scale-110 transform transition-transform duration-300">🚚</div>
+          <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Deliver On Time</h3>
+          <p class="text-lg text-gray-600 leading-relaxed">Execute optimized deliveries with real-time tracking and updates</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="section py-20 md:py-28 bg-gradient-to-br from-gray-50 to-indigo-50">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl md:text-6xl lg:text-7xl font-black text-center mb-16 gradient-text">Why Choose PickAI?</h2>
+      <ul class="features grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
+        <li class="bg-white p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+          <div class="text-5xl md:text-6xl mb-6">⚡</div>
+          <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Real-time Tracking</h3>
+          <p class="text-lg text-gray-600 leading-relaxed">Monitor your deliveries in real-time with precise location updates and estimated arrival times</p>
+        </li>
+        <li class="bg-white p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+          <div class="text-5xl md:text-6xl mb-6">🧠</div>
+          <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">AI-Powered Routing</h3>
+          <p class="text-lg text-gray-600 leading-relaxed">Advanced machine learning algorithms optimize routes for maximum efficiency and cost savings</p>
+        </li>
+        <li class="bg-white p-8 md:p-10 rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+          <div class="text-5xl md:text-6xl mb-6">📊</div>
+          <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-800">Delivery Analytics</h3>
+          <p class="text-lg text-gray-600 leading-relaxed">Comprehensive insights and analytics to optimize your logistics operations and performance</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact py-20 md:py-28 bg-gradient-to-br from-indigo-600 to-purple-700 text-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-4xl md:text-6xl lg:text-7xl font-black text-center mb-16 text-white">Contact Us</h2>
+      <div class="max-w-2xl mx-auto">
+        <form class="space-y-8 bg-white/10 backdrop-blur-sm p-8 md:p-12 rounded-3xl border border-white/20 shadow-2xl">
+          <div class="space-y-2">
+            <label class="block text-lg font-semibold text-white/90">Your Name</label>
+            <input type="text" placeholder="Enter your full name" required 
+                   class="w-full p-4 md:p-5 text-lg bg-white/20 border-2 border-white/30 rounded-2xl placeholder-white/70 text-white focus:border-white focus:outline-none focus:ring-4 focus:ring-white/20 transition-all duration-300" />
+          </div>
+          <div class="space-y-2">
+            <label class="block text-lg font-semibold text-white/90">Email Address</label>
+            <input type="email" placeholder="Enter your email address" required 
+                   class="w-full p-4 md:p-5 text-lg bg-white/20 border-2 border-white/30 rounded-2xl placeholder-white/70 text-white focus:border-white focus:outline-none focus:ring-4 focus:ring-white/20 transition-all duration-300" />
+          </div>
+          <div class="space-y-2">
+            <label class="block text-lg font-semibold text-white/90">Message</label>
+            <textarea placeholder="Tell us about your logistics needs" required rows="5"
+                      class="w-full p-4 md:p-5 text-lg bg-white/20 border-2 border-white/30 rounded-2xl placeholder-white/70 text-white focus:border-white focus:outline-none focus:ring-4 focus:ring-white/20 transition-all duration-300 resize-none"></textarea>
+          </div>
+          <button type="submit" class="w-full bg-white text-indigo-600 px-8 py-5 text-xl font-bold rounded-2xl hover:bg-gray-100 transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-1 hover:scale-105">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6 text-center">
+      <p class="text-lg md:text-xl text-gray-300">&copy; 2025 <span class="font-bold gradient-text">PickAI</span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
