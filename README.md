@@ -2,7 +2,7 @@
 
 Live demo ➜ **http://34.249.11.6** (or **https://pickAI.ddns.net**)
 
-![Screenshot of Landing Page](Screenshot.png)
+![Screenshot of Landing Page](screenshot.png)
 
 ---
 
